@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Threading;
 using UnityEngine;
 
@@ -19,7 +20,7 @@ public class Spawner : MonoBehaviour
 
     private void Update()
     {
-        if (timer <= 0f)
+/*        if (timer <= 0f)
         {
             if (numberOfObjectsToSpawn > 0)
             {
@@ -29,6 +30,18 @@ public class Spawner : MonoBehaviour
             numberOfObjectsToSpawn--;
             timer = timeOffset;
         }
-        timer -= Time.deltaTime;
+        timer -= Time.deltaTime;*/
     }
+
+    public void spawner(int numberOfObjects)
+    {
+        UnityEngine.Debug.Log("Spawning!!!!");
+        
+        for (int i = 0; i < numberOfObjects; ++i)
+        {
+            Rigidbody p = Instantiate(objectToSpawn, transform.position, Quaternion.identity);
+            
+        }
+    }
+
 }
