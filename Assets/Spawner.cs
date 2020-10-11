@@ -12,6 +12,7 @@ public class Spawner : MonoBehaviour
 
     public float timeOffset = 2f;
     private float timer;
+    private bool spawning;
 
     private void Start()
     {
@@ -20,27 +21,29 @@ public class Spawner : MonoBehaviour
 
     private void Update()
     {
-/*        if (timer <= 0f)
+        if (spawning)
         {
-            if (numberOfObjectsToSpawn > 0)
+            if (timer <= 0f)
             {
-                Rigidbody p = Instantiate(objectToSpawn, transform.position, Quaternion.identity);
-                p.velocity = transform.forward * 10;
+                if (numberOfObjectsToSpawn > 0)
+                {
+                    Rigidbody p = Instantiate(objectToSpawn, transform.position, Quaternion.identity);
+                    p.velocity = transform.forward * 10;
+                }
+                numberOfObjectsToSpawn--;
+                timer = timeOffset;
             }
-            numberOfObjectsToSpawn--;
-            timer = timeOffset;
+            timer -= Time.deltaTime;
+            if (numberOfObjectsToSpawn <= 0) spawning = false;
         }
-        timer -= Time.deltaTime;*/
     }
 
-    public void spawner(int numberOfObjects)
+    public void SpawnObjects(int numObjects)
     {
-        UnityEngine.Debug.Log("Spawning!!!!");
-        
-        for (int i = 0; i < numberOfObjects; ++i)
+        if (!spawning)
         {
-            Rigidbody p = Instantiate(objectToSpawn, transform.position, Quaternion.identity);
-            
+            spawning = true;
+            numberOfObjectsToSpawn = numObjects;
         }
     }
 
