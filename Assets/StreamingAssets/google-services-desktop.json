@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "87658804057",
+    "firebase_url": "https://trash-simulator.firebaseio.com",
+    "project_id": "trash-simulator",
+    "storage_bucket": "trash-simulator.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:87658804057:android:d69c1314ffae9c2d28d248",
+        "android_client_info": {
+          "package_name": "com.DefaultCompany.KnightHacks2020"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "87658804057-pqoh3ohcpv7mji62755hs95753a7if8f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.DefaultCompany.KnightHacks2020",
+            "certificate_hash": "4313d731186f1c5ea940608e8998880cb5cd2815"
+          }
+        },
+        {
+          "client_id": "87658804057-agkui6msj06aa60o929a5sr0739mnvg3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZbPPU36EjqdJAyM0P44RxZOmYZ1yYeEg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "87658804057-agkui6msj06aa60o929a5sr0739mnvg3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
