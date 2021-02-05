@@ -1,7 +1,6 @@
 # Trash Simulator
 ### **WINNER** of the Best Hardware Hack from MLH & Digi-key at Knight Hacks 2020!
 
-
 [![Demo video](https://github.com/jordansmithsgames/jordansmithsgames/blob/main/readmes/trashsimulator/thumbsup.png)](https://www.youtube.com/embed/vJtxs6iU228)
 
 (Psst, check out the [Devpost](https://devpost.com/software/trash-simulator)!)
