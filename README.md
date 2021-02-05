@@ -1,1 +1,1 @@
-# KnightHacks2020
+# Trash Simulator
